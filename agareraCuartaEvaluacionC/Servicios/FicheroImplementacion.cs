@@ -80,6 +80,19 @@ namespace agareraCuartaEvaluacionC.Servicios
             string ruta = ($"log-{fechaHoy.ToString("ddMMyyyy")}.txt");
         }
 
+        public void ficheroConsultas(List<CitasDTos> listaAntigua)
+        {
+            DateTime fechaHoy = DateTime.Now;
+
+            string ruta = ($"citasConAsistencia-{fechaHoy.ToString("ddMMyyyy")}");
+
+            Console.WriteLine("Escriba la fecha de la consulta");
+            string fecha = Console.ReadLine();
+
+            Console.WriteLine("Escriba la especialidad");
+            string especialidad = Console.ReadLine();
+        }
+
 
     }
 }
